@@ -129,7 +129,7 @@ Do slovníku se nepřistupuje pomocí indexů, ale pomocí klíčů. Každá hod
 ```
 
 #### Tuply
-Tuply jsou seznamy, které jsou uspořádané a nelze měnit! Vytvoříte je jen jednou a pak jsou neměnné. Používá se to spíše jako pojistka pokud máte nějaký seznam, který za žádných okolností nechcete při běhu programu měnit. Tuply se vytváří do složených závorek a přistupuje se k nim pomocí indexů.
+Tuply jsou seznamy, které jsou uspořádané a nelze měnit! Vytvoříte je jen jednou a pak jsou neměnné. Používá se to spíše jako pojistka pokud máte nějaký seznam, který za žádných okolností nechcete při běhu programu měnit. Tuply se vytváří do kulatých závorek a přistupuje se k nim pomocí indexů.
 
 ![tuple functions](https://gitlab.com/Bulva/python-2020/-/raw/master/03-datove_typy_a_podminky/images/tuple_functions.jpg)
 
