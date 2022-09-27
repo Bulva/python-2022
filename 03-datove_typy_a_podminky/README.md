@@ -1,3 +1,11 @@
+## Úkol
+Vytvořtě konzolový dotazník, který se uživatele zeptá na 4 otázky. Otázky nechávám na vás, dole jsou jen příklady.
+* První otázka se zeptá na celé číslo. Například na věk
+* Druhá otázka se zeptá na desetinné číslo. Například na stav bankovního konta
+* Třetí otázka se zeptá řetězec. Například jméno
+* Čtvrtá otázka se zeptá na boolean. Například jestli člověk někdy zalhal
+* Nakonec vypíšete do konzole otázky i odpovědi ve formátu, který uznáte za vhodné.
+
 ## Datové typy a podmínky
 * [Datové typy a podmínky - prezentace](https://slides.com/bulva/datove-typy-a-podminky)
 
