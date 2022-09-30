@@ -48,12 +48,12 @@ len_of_str = len('Honza')
 # 2. volání funkce pomocí tečkové notace na datovém typu nebo objektu, lowercase...
 # v tomto případě funkce nemá parametr, ale řetězec se bere rovnou z objektu v proměnné před tečkou
 s = 'HONZA'
-print(s.lowecase())     # vypíše honza
+print(s.lower())     # vypíše honza
 
 # Funkce lze do sebe zanořovat, pak se vykonávají odprostředku. U funkce na řádku 50 se nejdřív vykoná s.lowercase() a hodnota z této funkce se použije do printu
 # Alternativně lze zapsat i takto:
 s = 'HONZA'
-s_lower = s.lowercase()
+s_lower = s.lower()
 print(s_lower)
 
 # Zjištění datového typu lze provést pomocí funkce type
