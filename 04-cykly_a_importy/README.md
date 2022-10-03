@@ -1,10 +1,3 @@
-## 1. bodovaný úkol
-Vytvořte textovou hru (https://en.wikipedia.org/wiki/Text-based_game), kde využijete větvení pomocí podmínek a knihovny a funkce, které naimportujete. Nezapomeňte také použít datové typy list a dictionary (slovník například pro vyběr voleb uživatele). Fantazii se meze nekladou.
-
-
-## Úkol do příští hodiny
-Udělejte TODO aplikaci. Uživatel bude mít možnost si zapsat poznámku, která se mu uloží do pole jako slovník. Bude obsahovat text upomínky, jestli byl úkol splněn a datum deadlinu. Uživatel bude mít možnost pomocí číselného menu vypsat všechny úkoly, které jsou po deadlinu (aktuálním dnu). Abyste nemuseli ručně přidávat nové úkoly, tak si vyplňte program dopředu.
-
 ## Cykly
 Cykly v programování slouží k opakování určitých operací. Pomocí cyklu můžete například prohledávat pole a zastavit cyklus ve chvíli, kdy narazíte na hledaný prvek. Nebo můžete například vypsat postupně název všech studentů apod.
 
