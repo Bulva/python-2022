@@ -11,29 +11,29 @@ Každá kapitola obsahuje odkaz na odpovídající složku v tomto repozitáři 
     * Co je GitLab?
     * Založení repozitáře
     * Práce s gitem
-    * [Tutoriál pro práci s gitem a Gitlabem](https://gitlab.com/Bulva/python-2020/tree/master/02-git_a_Gitlab)
-3. [Datové typy a podmínky - materiály](https://gitlab.com/Bulva/python-2020/tree/master/03-datove_typy_a_podminky) a [Datové typy a podmínky - prezentace](https://slides.com/bulva/datove-typy-a-podminky)
+    * [Tutoriál pro práci s gitem a Gitlabem](https://github.com/Bulva/python-2022/02-git_a_Gitlab)
+3. [Datové typy a podmínky - materiály](https://github.com/Bulva/python-2022/03-datove_typy_a_podminky) a [Datové typy a podmínky - prezentace](https://slides.com/bulva/datove-typy-a-podminky)
     * Datové typy Pythonu
     * Základní větvení programu pomocí podmínek
     * Přetypování
-4. [Cykly a importy- materiály](https://gitlab.com/Bulva/python-2020/tree/master/04-cykly_a_importy)
+4. [Cykly a importy- materiály](https://github.com/Bulva/python-2022/04-cykly_a_importy)
     * while cyklus
     * for cyklus
     * break, continue, loop else,   pass
     * iterace seznamem a slovníkem
     * importy knihoven Pythonu (random)
-5. [Funkce](https://gitlab.com/Bulva/python-2020/tree/master/04-cykly_a_importy)
+5. [Funkce](https://github.com/Bulva/python-2022/04-cykly_a_importy)
     * definice funkce
     * argumenty funkce
     * návratová hodnota funkce
     * proměnlivé počty argumentů
     * kontext (scope) proměnné
-6. [Výjimky a práce se soubory](https://gitlab.com/Bulva/python-2020/tree/master/06-vyjimky_a_prace_se_soubory)
+6. [Výjimky a práce se soubory](https://github.com/Bulva/python-2022/06-vyjimky_a_prace_se_soubory)
     * výjimky včetně možnosti jejich vyhození
     * try/except blok
     * načtení souboru
     * zápis do souboru
-7. [Objektově orientované programování](https://gitlab.com/Bulva/python-2020/tree/master/07-objektove_orientovane_programovani)
+7. [Objektově orientované programování](https://github.com/Bulva/python-2022/07-objektove_orientovane_programovani)
     * základy OOP
     * implementace v Pythonu
     * statické funkce
