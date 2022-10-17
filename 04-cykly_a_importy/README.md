@@ -1,5 +1,5 @@
 ## 1. bodovaný úkol
-Vytvořte textovou hru (https://en.wikipedia.org/wiki/Text-based_game), kde využijete větvení pomocí podmínek a knihovny a funkce, které naimportujete. Nezapomeňte také použít datové typy list a dictionary (slovník například pro vyběr voleb uživatele). Fantazii se meze nekladou.
+Vytvořte textovou hru (https://en.wikipedia.org/wiki/Text-based_game), kde využijete větvení pomocí podmínek, které naimportujete. Nezapomeňte také použít datové typy list a dictionary (slovník například pro vyběr voleb uživatele). Fantazii se meze nekladou.
 
 ## Cykly
 Cykly v programování slouží k opakování určitých operací. Pomocí cyklu můžete například prohledávat pole a zastavit cyklus ve chvíli, kdy narazíte na hledaný prvek. Nebo můžete například vypsat postupně název všech studentů apod.
