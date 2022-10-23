@@ -1,43 +1,67 @@
 const students = [
     {
         "id": 1,
-        "name": "Romana Drahošová",
+        "name": "Irina Grankina",
         "points": 0,
         "drawed": false
     },
     {
         "id": 2,
-        "name": "Jan Holub",
+        "name": "Jan Horák",
         "points": 0,
         "drawed": false
     },
     {
         "id": 3,
-        "name": "David Kirner",
+        "name": "Petr Janíček",
         "points": 0,
         "drawed": false
     },
     {
         "id": 4,
-        "name": "Mária Kmošková",
+        "name": "Filip  Kovář",
         "points": 0,
         "drawed": false
     },
     {
         "id": 5,
-        "name": "Ondřej Mucha",
+        "name": "Martin Lapčík",
         "points": 0,
         "drawed": false
     },
     {
         "id": 6,
-        "name": "Veronika Nováková",
+        "name": "Ivana Prášilová",
         "points": 0,
         "drawed": false
     },
     {
         "id": 7,
-        "name": "Barbora Plačková",
+        "name": "Jan Sklenář",
+        "points": 0,
+        "drawed": false
+    },
+    {
+        "id": 8,
+        "name": "Matěj Slivka",
+        "points": 0,
+        "drawed": false
+    },
+    {
+        "id": 9,
+        "name": "Martina Szórádová",
+        "points": 0,
+        "drawed": false
+    },
+    {
+        "id": 10,
+        "name": "Marek Volech",
+        "points": 0,
+        "drawed": false
+    },
+    {
+        "id": 11,
+        "name": "Kateřina Tajovská",
         "points": 0,
         "drawed": false
     }

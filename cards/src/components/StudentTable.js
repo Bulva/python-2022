@@ -30,7 +30,6 @@ export default function StudentTable(props) {
                     ))}
                 </tbody>
                 </Table>
-                <h5>https://app.codingrooms.com/w/OX6yeYYQoOU6</h5>
         </>
     )
 }
