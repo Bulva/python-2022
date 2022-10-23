@@ -436,17 +436,7 @@ const questions = [
     },
     {
         "id": 88,
-        "text": "Co dělá příkaz cd v příkazovém řádku?",
-        "answered": false,
-    },
-    {
-        "id": 89,
         "text": "Kolik mezer se používá při vytvoření nového bloku kódu v pythonu?",
-        "answered": false,
-    },
-    {
-        "id": 90,
-        "text": "Co dělá funkce split() a jaké má parametry?",
         "answered": false,
     }
 ]
