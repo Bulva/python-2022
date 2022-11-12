@@ -15,7 +15,10 @@ def is_free(position):
     :param (int) position: pozice v seznamu, ve kterem se bude zjistovat obsazenost
     :return (bool): vrati True, kdyz je pozice volna a False, kdyz pozice v knihovne volna neni
     """
-    pass
+    if bookshelf[position] is None:
+        return True
+    return False
+    
 
 
 def add_book(position, name, pages, read=False):
@@ -27,8 +30,12 @@ def add_book(position, name, pages, read=False):
     :param (bool) read: informace jestli je kniha prectena nebo ne
     :return: None
     """
-    pass
-
+    if is_free(position):
+        bookshelf[position] = {
+                    'name': name,
+                    'pages': pages,
+                    'read': read
+                    }
 
 def find_book(name):
     """
@@ -36,7 +43,11 @@ def find_book(name):
     :param (str) name: nazev knihy
     :return (int): index na kterem se kniha nachazi, popripade False pokud se tam kniha nenachazi
     """
-    pass
+    for i in range(len(bookshelf)):
+        if bookshelf[i] is not None:
+            if bookshelf[i]['name'] == name:
+                return i
+
 
 
 def read_book(name):
@@ -82,9 +93,9 @@ def average_number_of_pages():
 # print(is_free(5))  # False
 # print(is_free(6))  # True
 
-# print(find_book('A Byte of python'))  # 0
-# print(find_book('Python Geospatial Development'))  # 4
-# print(find_book('Programming Java'))  # False
+print(find_book('A Byte of python'))  # 0
+print(find_book('Python Geospatial Development'))  # 4
+print(find_book('Programming Java'))  # False
 
 # read_book('A Byte of python')
 # read_book('Automate the boring stuff with Python')
