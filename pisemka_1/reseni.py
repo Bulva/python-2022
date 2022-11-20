@@ -7,7 +7,7 @@
 #
 
 # Vaším úkolem je simulovat e-shop. Jako prodejce máte velmi malý e-shop s velmi malou nabídkou. Zaměřujete se na prodej deskových her.
-# Váš sklad reprezentuje list, který bude obsahovat jednotlivé hry. Ty jsou reprezentovány vždy slovníkem. Jeden slovník představuje danou hru, ale 
+# Váš sklad reprezentuje list, který bude obsahovat jednotlivé hry. Ty jsou reprezentovány vždy slovníkem. Jeden slovník představuje danou hru, ale
 # nepředstavuje konkrétní hru. Slovník v sobě obsahuje počet her na skladě
 
 # proměnná představuje eshop
@@ -46,7 +46,10 @@ def sell_game(name, money):
     :param (float) money: účet eshopu
     :return (float): vrací hodnotu účtu do proměnné my_money
     """
-    pass
+    for game in eshop:
+        if name == game['name']:
+            game['quantity'] = game['quantity'] - 1
+            return money + game['price']
 
 
 # 2 body
@@ -59,7 +62,8 @@ def add_game(name, publisher, quantity, categories, price):
     :param (list) category: kategorie, do kterých hry spadá
     :param (int) price: cena hry
     """
-    pass
+    eshop.append({'name': name, 'publisher': publisher,
+                 'quantity': quantity, 'categories': categories, 'price': price})
 
 
 # 3 body
@@ -69,7 +73,11 @@ def find_game_by_category(category):
     :param (str) category: řetězec z klíče category
     :return (list): vrátí list s hrami, které spadají do dané kategorie. Pokud žádna hra nesplňuje podmínku, tak vrátí prázdný list
     """
-    pass
+    games = []
+    for game in eshop:
+        if category in game['categories']:
+            games.append(game)
+    return games
 
 
 # 3 body
@@ -78,7 +86,11 @@ def get_most_expensive():
     Funkce, která vrátí nejdražší hru v eshopu
     :return (dict): nejdražší hra v eshopu. Pokud stojí více her stejně, tak vraťte jednu z her
     """
-    pass
+    most = None
+    for game in eshop:
+        if most is None or most['price'] < game['price']:
+            most = game
+    return most
 
 
 # 3 body
@@ -87,7 +99,10 @@ def avg_price():
     Funkce, která vrátí pruměrnou cenu her v eshopu
     :return (float): průměrná cena her v eshopu zaokrouhlená na 2 destinná místa
     """
-    pass
+    price = 0
+    for game in eshop:
+        price += game['price']
+    return round(price/len(eshop), 2)
 
 
 # 4 body
@@ -102,7 +117,21 @@ def recommend_game(category=None, max_price=None, fav_publisher=None):
     :param (str) fav_publisher: oblíbeny vydavatel her
     :return (list): doporučené hry. Pokud žádné doporučené hry nejsou, tak vraťte prádzný list
     """
-    pass
+    if category is None and max_price is None and fav_publisher is None:
+        raise ValueError('Prázdné hodnoty')
+
+    games = []
+    for game in eshop:
+        filt = []
+        if category is not None:
+            filt.append(category in game['categories'])
+        if max_price is not None:
+            filt.append(max_price >= game['price'])
+        if fav_publisher is not None:
+            filt.append(fav_publisher == game['publisher'])
+        if False not in filt:
+            games.append(game)
+    return games
 
 
 # Ukázky volání funkcí
@@ -131,43 +160,4 @@ print(avg_price())
 print('\n')
 
 print('Doporučená hra: ')
-print(recommend_game('rodinná', 1600))
-
-
-# SPRÁVNÝ VÝPIS
-# Moje peníze před prodejem: 150000
-# Moje peníze po prodeji: 152600
-# Můj eshop po prodeji:
-# [{'name': 'Successors', 'publisher': 'Fox in the box', 'quantity': 4, 'categories': ['válečná', 'historická', 'pro náročné', 'konfliktní'], 'price': 2600}, {'name': 'Wingspan', 'publisher': 'Mindok', 'quantity': 55, 'categories': ['rodinná', 'příroda'], 'price': 1500}]
-
-
-# Můj eshop po přidání hry:
-# [{'name': 'Successors', 'publisher': 'Fox in the box', 'quantity': 4, 'categories': ['válečná', 'historická', 'pro náročné', 'konfliktní'], 'price': 2600}, {'name': 'Wingspan', 'publisher': 'Mindok', 'quantity': 55, 'categories': ['rodinná', 'příroda'], 'price': 1500}, {'name': 'Root', 'publisher': 'Fox in the box', 'quantity': 10, 'categories': ['konfliktní', 'asymetrická'], 'price': 1500}]
-
-
-# Hra podle kategorie:
-# [{'name': 'Successors', 'publisher': 'Fox in the box', 'quantity': 4, 'categories': ['válečná', 'historická', 'pro náročné', 'konfliktní'], 'price': 2600}, {'name': 'Root', 'publisher': 'Fox in the box', 'quantity': 10, 'categories': ['konfliktní', 'asymetrická'], 'price': 1500}]
-
-
-# Nejdražší hra:
-# {'name': 'Successors', 'publisher': 'Fox in the box', 'quantity': 4, 'categories': ['válečná', 'historická', 'pro náročné', 'konfliktní'], 'price': 2600}
-
-
-# Průměrná cena her:
-# 1866.67
-
-
-# Doporučená hra:
-# [{'name': 'Wingspan', 'publisher': 'Mindok', 'quantity': 55, 'categories': ['rodinná', 'příroda'], 'price': 1500}]
-
-
-
-
-
-
-
-
-
-
-
-
+print(recommend_game(max_price=1600))
