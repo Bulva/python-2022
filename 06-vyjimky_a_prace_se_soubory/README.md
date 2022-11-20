@@ -1,3 +1,15 @@
+## Domací úkol 2
+Vaším úkolem bude ze zadaného [csv souboru](https://gist.github.com/giorgi-ghviniashvili/6d40c712cfc113d07aa11918faf3a865) zparsovat souřadnice.
+Tyto souřadnice dále reverzně geokódujte pomocí [knihovny geocoder](https://github.com/DenisCarriere/geocoder).Pro reverzní geokódování vyzkoušejte různé [providery](https://geocoder.readthedocs.io/#providers). 
+Po reverzním geokodóvání byste měli získat informace o poloze bodů (město, oblast, stát). Tyto informace dále zapište do vámi vytvořeného souboru, který bude
+obsahovat přehledně zapsané souřadnice bodu a geokódovaný výsledek nejmenší zjistitelné jednotky nebo hierarchii všech zjištěných jednotek.
+
+Následně využijte [souboru](https://github.com/datasets/world-cities/blob/master/data/world-cities.csv), který obsahuje města.
+Tento soubor zparsujte, geokódujte (získáte souřadnice) a pak najděte, který bod (nebo body) jsou nejblíže jednotlivým bodům z prvního souboru. Výsledek opět zapíšete do vámi vytvořeného souboru.
+
+Kód odevzdejte na vámi vytvořený GitLab repozitář, kde budu přidaný v roli Developer, abych mohl kód zkontrolovat. Do repozitáře můžete ukládat kód postupně během prací na úkolu.
+Pokud vám to bude dávat smysl, můžete použít i větve pro jednotlivé funkcionality vaší aplikace.
+
 ## Výjimky
 Výjimky (exceptions) umožňují v případě chyby nebo nějaké situace přeskočit část kódu, popřípadě úplně zastavit běh programu.
 
