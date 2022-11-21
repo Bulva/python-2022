@@ -5,7 +5,7 @@
     Adršpach (Village, Náchod)
     Albrechtice (Village, Karviná)
     Albrechtice (Village, Ústí nad Orlicí)
-    Albrechtice nad Orlicí (Village, Rychnov nad Kněžnou)
+    Albrechtice nad Orlicí (Village,aRychnov nad Kněžnou)
     Albrechtice nad Vltavou (Village, Písek)
     Albrechtice v Jizerských horách (Village, Jablonec nad Nisou)
     Albrechtičky (Village, Nový Jičín)
