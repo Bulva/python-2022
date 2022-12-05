@@ -160,4 +160,12 @@ print(avg_price())
 print('\n')
 
 print('Doporučená hra: ')
-print(recommend_game(max_price=1600))
+print(recommend_game('příroda',2000,'Mindok'))
+print(recommend_game('konfliktní',2000,None))
+print(recommend_game('příroda',None,'Mindok'))
+print(recommend_game(None,2000,'Mindok'))
+print(recommend_game('konfliktní',None, None))
+print(recommend_game(None, None, 'Mindok'))
+print(recommend_game(None,2000,None))
+print(recommend_game(None,None,None))
+
